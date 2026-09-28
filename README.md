@@ -22,3 +22,22 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+
+## Dozoi implementation
+
+The home page uses confirmed business data in `src/lib/dozoi.ts`. All order CTAs
+use the business WhatsApp link. The original logo and legible burger menu were
+not included with the design references: `logoUrl` stays null (plain business
+name fallback), and `confirmedBurgers` stays empty until these are supplied.
+No product names, ingredients, prices, reviews, address or closing time are invented.
+
+`BurgerScene` accepts transparent `layers` with open/closed vertical offsets,
+or a `video: { src, poster }`. A final seekable video should progress from the
+exploded burger to the assembled burger. Scroll updates use passive listeners
+and one requestAnimationFrame, with no scroll locking. Reduced motion shows the
+assembled state and removes the extra scroll distance. Current food visuals are
+illustrative, labeled in the page and served locally as optimized WebP assets.
+
+Local display/body fonts are Nimbus Sans (URW), with license in
+`public/fonts/LICENSE.txt`. No runtime font or image CDN is required.
