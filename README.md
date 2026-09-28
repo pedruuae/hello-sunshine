@@ -37,7 +37,7 @@ or a `video: { src, poster }`. A final seekable video should progress from the
 exploded burger to the assembled burger. Scroll updates use passive listeners
 and one requestAnimationFrame, with no scroll locking. Reduced motion shows the
 assembled state and removes the extra scroll distance. Current food visuals are
-illustrative, labeled in the page and served locally as optimized WebP assets.
+section compositions, with no association to a named menu item or price, served locally as optimized WebP assets.
 
-Local display/body fonts are Nimbus Sans (URW), with license in
+The campaign display font is Anton (SIL OFL, `public/fonts/Anton-OFL.txt`). The body font is Nimbus Sans (URW), with license in
 `public/fonts/LICENSE.txt`. No runtime font or image CDN is required.

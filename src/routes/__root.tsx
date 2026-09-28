@@ -99,9 +99,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "data:," },
       {
         rel: "preload",
-        href: "/fonts/display.otf",
+        href: "/fonts/anton.ttf",
         as: "font",
-        type: "font/otf",
+        type: "font/ttf",
         crossOrigin: "anonymous",
       },
     ],

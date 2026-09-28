@@ -149,17 +149,25 @@ function Index() {
         <section ref={hero} className="hero-scroll" id="inicio" aria-labelledby="hero-title">
           <div className="hero-sticky">
             <div className="hero-inner container">
+              <p className="hero-kicker eyebrow">DOZOI • HAMBURGUERIA, PIZZARIA E AÇAÍTERIA</p>
+              <h1
+                id="hero-title"
+                className="campaign-title"
+                aria-label="O sabor que chama você de volta."
+              >
+                <span aria-hidden="true">O SABOR</span>
+                <span aria-hidden="true">DE VOLTA.</span>
+              </h1>
+              <div className="hero-art">
+                <BurgerScene scrollTarget={hero} />
+                <span className="art-caption">
+                  DEU FOME?
+                  <br />
+                  <strong>DEU DOZOI.</strong>
+                </span>
+              </div>
               <div className="hero-copy">
-                <p className="eyebrow">
-                  <span className="small-dot" /> SUA FOME TEM ENDEREÇO CERTO
-                </p>
-                <h1 id="hero-title">
-                  O SABOR QUE
-                  <br />
-                  CHAMA VOCÊ
-                  <br />
-                  <span>DE VOLTA.</span>
-                </h1>
+                <p className="hero-bridge">QUE CHAMA VOCÊ.</p>
                 <p className="hero-description">
                   Hambúrgueres, pizzas, açaí e porções para matar a vontade de verdade.
                 </p>
@@ -174,16 +182,6 @@ function Index() {
                   <Clock3 size={15} aria-hidden="true" />
                   Todos os dias, a partir das <strong>18h30</strong>
                 </p>
-              </div>
-              <div className="hero-art">
-                <div className="orange-disc" aria-hidden="true" />
-                <span className="art-caption">
-                  DEU FOME?
-                  <br />
-                  <strong>DEU DOZOI.</strong>
-                </span>
-                <BurgerScene scrollTarget={hero} />
-                <span className="image-note">Imagem ilustrativa</span>
               </div>
               <a href="#cardapio" className="scroll-hint">
                 <span>O MELHOR DA NOITE COMEÇA AQUI</span>
@@ -228,12 +226,11 @@ function Index() {
             <div id="hamburgueres" className="burger-feature" data-reveal>
               <div className="feature-art">
                 <span className="feature-background-word" aria-hidden="true">
-                  DEU
+                  HAMBÚR
                   <br />
-                  FOME.
+                  GUER.
                 </span>
                 <BurgerScene staticView />
-                <span className="image-note">Imagem ilustrativa</span>
               </div>
               <div className="feature-copy">
                 <p className="eyebrow">
@@ -330,13 +327,12 @@ function Index() {
             <figure className="more-photo" data-reveal>
               <img
                 src="/images/categories-illustration.webp"
-                alt="Composição ilustrativa com pizza, açaí e batatas fritas"
+                alt="Composição gastronômica com pizza, açaí e batatas fritas"
                 loading="lazy"
                 decoding="async"
                 width="1100"
                 height="733"
               />
-              <figcaption>Imagens ilustrativas. Consulte as opções no atendimento.</figcaption>
             </figure>
           </div>
         </section>

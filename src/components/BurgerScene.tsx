@@ -76,7 +76,7 @@ export function BurgerScene({
       className={`burger-scene${staticView ? " is-static" : ""}`}
       style={{ "--assembly": 1 } as CSSProperties}
       role="img"
-      aria-label="Composição ilustrativa de um hambúrguer"
+      aria-label="Composição gastronômica de um hambúrguer"
     >
       {video ? (
         <video
